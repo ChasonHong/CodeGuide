@@ -143,8 +143,8 @@
 <div class="section" id="project-naming">
     <div class="col">
         <h3>项目命名</h3>
-        <p>全部采用小写方式， 以下划线分隔。</p>
-        <p>例：my_project_name</p>
+        <p>项目名全部采用小写方式， 以中划线分隔。</p>
+        <p>例：my-project-name</p>
     </div>
 </div>
 
@@ -153,7 +153,7 @@
         <h3>目录命名</h3>
         <p>参照项目命名规则；</p>
         <p>有复数结构时，要采用复数命名法。</p>
-        <p>例：scripts, styles, images, data_models</p>
+        <p>例：scripts, styles, images, data-models</p>
     </div>
 </div>
 
@@ -161,7 +161,7 @@
     <div class="col">
         <h3>JS文件命名</h3>
         <p>参照项目命名规则。</p>
-        <p>例：account_model.js</p>
+        <p>例：account-model.js</p>
     </div>
 </div>
 
@@ -169,7 +169,7 @@
     <div class="col">
         <h3>CSS, SCSS文件命名</h3>
         <p>参照项目命名规则。</p>
-        <p>例：retina_sprites.scss</p>
+        <p>例：retina-sprites.scss</p>
     </div>
 </div>
 
@@ -177,7 +177,7 @@
     <div class="col">
         <h3>HTML文件命名</h3>
         <p>参照项目命名规则。</p>
-        <p>例：error_report.html</p>
+        <p>例：error-report.html</p>
     </div>
 </div>
 
@@ -190,7 +190,7 @@
         <h3>语法</h3>
         <ul>
             <li>缩进使用soft tab（4个空格）；</li>
-            <li>嵌套的节点应该缩进；</li>
+            <li>嵌套的节点应该缩进（四个空格）；</li>
             <li>属性名全小写，用中划线做分隔符；</li>
             <li>属性值必须用双引号包围，不要使用单引号；</li>
             <li>自定义属性建议以 xxx- 为前缀，推荐使用 data-*。</li>
@@ -337,7 +337,7 @@
             <li>在 Web Server 根目录放置 favicon.ico 文件。</li>
             <li>使用 link 指定 favicon。</li>
         </ol>
-        
+
     </div>
     <div class="col">
         <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- 示例 --&gt;</span>
@@ -433,7 +433,7 @@
         <p><strong style="color:#c0f">[建议]</strong> CSS 文件使用无 BOM 的 utf-8 编码，为每个CSS文档显式的定义编码，在文档首行定义 @charset "utf-8";</p>
         <p style="color:#0a8;">解释：utf-8 编码具有更广泛的适应性。BOM 在使用程序或工具处理文件时可能造成不必要的干扰。</p>
         <p style="color:#0a8;">在 Sass 中，如果文档中出现中文，却未显示定义编码，将会编译出错，为了统一各种写法，且提前规避错误几率，统一要求每个CSS文档都需要定义编码。</p>
-        
+
     </div>
 </div>
 <div class="section" id="css-indentation">
@@ -1153,7 +1153,7 @@
 
 <span class="c">/* not good */</span>
 <span class="nc">.element</span> <span class="p">{</span>
-    <span class="k">font-weight</span><span class="o">:</span> <span class="m">bold</span><span class="p">;</span>    
+    <span class="k">font-weight</span><span class="o">:</span> <span class="m">bold</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
     </div>
 </div>
@@ -1567,7 +1567,7 @@
             <li>变量声明后（当变量声明在代码块的最后一行时，则无需空行）</li>
             <li>注释前（当注释在代码块的第一行时，则无需空行）</li>
             <li>代码块后（在函数调用、数组、对象中则无需空行）</li>
-            <li>文件最后保留一个空行</li>
+            <li>文件最后保留一个空行。<a href="http://www.zhihu.com/question/20018991">为什么这么做？</a></li>
         </ul>
     </div>
     <div class="col">
@@ -2376,4 +2376,3 @@
 
     </body>
 </html>
-
