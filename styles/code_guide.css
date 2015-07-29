@@ -95,6 +95,11 @@ h4 {
     font-size: 1.25rem;
 }
 
+h4 a {
+    display: inline-block;
+    width: 250px;
+}
+
 p {
     margin: 0 0 .5rem;
 }
@@ -240,7 +245,8 @@ pre code {
 
 }
 .masthead h1 {
-    margin-bottom: .25rem;
+    width: 800px;
+    margin: 0 auto .25rem;
 
     color: #fff;
 }
@@ -635,17 +641,17 @@ pre code {
 }
 
 /* 提醒 建议 强制 解释 */
-strong { 
+strong {
    color: #c0f;
    font-size: 20px;
    font-style: normal;
 }
-table { 
-    border-collapse: collapse; 
+table {
+    border-collapse: collapse;
     margin-bottom: 7px;
 }
 table th,
-table td { 
+table td {
     border: 1px solid #ccc;
     padding: 5px;
     font-size: 16px;
