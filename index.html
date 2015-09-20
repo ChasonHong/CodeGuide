@@ -738,6 +738,15 @@
             Typographic 相关属性包括：font/line-height/text-align/word-wrap 等<br>
             Visual 相关属性包括：background/color/transition/list-style 等
         </p>
+        <p>
+          Positioning 处在第一位，因为他可以使一个元素脱离正常文本流，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为他决定了一个组件的大小和位置。
+        </p>
+        <p>
+          其他属性只在组件 内部 起作用或者不会对前面两种情况的结果产生影响，所以他们排在后面。
+        </p>
+        <p>
+          "关于完整的属性以及他们的顺序，请参考" <a href="http://twitter.github.com/recess">Recess</a>。
+        </p>
     </div>
     <div class="col">
         <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.declaration-order</span> <span class="p">{</span>
@@ -2130,6 +2139,13 @@
         <p>行尾不要有空白字符；</p>
         <p>switch的falling through和no default的情况一定要有注释特别说明；</p>
         <p>不允许有空的代码块。</p>
+
+        <ul>
+          <li>完全避免 == != 的使用， 用严格比较条件 === !==</li>
+          <li>eval 非特殊业务， 禁用！！！</li>
+          <li>with 非特殊业务， 禁用！！！</li>
+        </ul>
+
     </div>
     <div class="col">
         <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// not good</span>
