@@ -245,7 +245,7 @@ pre code {
 
 }
 .masthead h1 {
-    width: 800px;
+    /*width: 800px;*/
     margin: 0 auto .25rem;
 
     color: #fff;
