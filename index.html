@@ -198,6 +198,12 @@
             使用前缀有助于区分自定义属性和标准定义的属性。</li>
             <li>不要在自闭合标签结尾处添加斜线（<a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 规范</a> 指出他们是可选的）；</li>
             <li>不要省略可选的结束标签，例：<code>&lt;/li&gt;</code> 和 <code>&lt;/body&gt;</code>。</li>
+            <li>标签使用必须符合标签嵌套规则。</li>
+            <li class="explain">
+              <strong style="color:#0a8;">解释：</strong>
+              比如 div 不得置于 p 中，tbody 必须置于 table 中。
+              <p>详细的标签嵌套规则参见<a href="html5.dtd" style="color:#0a8;">HTML DTD</a>中的 Elements 定义部分。</p>
+          </li>
         </ul>
     </div>
     <div class="col">
@@ -214,7 +220,7 @@
 <span class="nt">&lt;/html&gt;</span>
 
 <span class="c">&lt;!-- good --&gt;</span>
-<span class="nt">&lt;ul</span> <span class="na">data-ui-type=</span><span class="s">"select"</span> <span class="nt">&lt;/ul&gt;</span></code></pre></div>
+<span class="nt">&lt;ul</span> <span class="na">data-ui-type=</span><span class="s">"select"<span class="nt">&gt;</span></span> <span class="nt">&lt;/ul&gt;</span></code></pre></div>
     </div>
 </div>
 
@@ -336,12 +342,13 @@
         <ol>
             <li>在 Web Server 根目录放置 favicon.ico 文件。</li>
             <li>使用 link 指定 favicon。</li>
+            <li>favicon详细介绍查看<a href="http://blog.csdn.net/nerdsully/article/details/7389818" style="color:#0a8;">此文</a></li>
         </ol>
 
     </div>
     <div class="col">
         <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- 示例 --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;icon&quot;</span> <span class="na">href=</span><span class="s">&quot;path/to/favicon.ico&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href=</span><span class="s">&quot;path/to/favicon.ico&quot;</span><span class="nt">&gt;</span></code></pre></div>
     </div>
 </div>
 
@@ -1141,6 +1148,7 @@
             <tr><td>文泉驿微米黑</td><td>Linux</td><td>WenQuanYi Micro Hei</td></tr>
         </table>
         <p><strong>[强制]</strong>font-family 按「西文字体在前、中文字体在后」、「效果佳 (质量高/更能满足需求) 的字体在前、效果一般的字体在后」的顺序编写，最后必须指定一个通用字体族( serif / sans-serif )。</p>
+        <p><strong style="color:#0a8;">解释：</strong>更详细说明可参考<a href="http://www.zhihu.com/question/19911793/answer/13329819" style="color:#0a8;">本文</a>。</p>
         <p><strong>[强制]</strong><strong style="color:#0a8;">字重</strong>font-weight 属性必须使用数值方式描述。</p>
         <p>CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览器的限制，实际上支持 400 和 700 两档，分别等价于关键词 normal 和 bold。浏览器本身使用一系列启发式规则来进行匹配，在 <700 时一般匹配字体的 Regular 字重，>=700 时匹配 Bold 字重。但已有浏览器开始支持 =600 时匹配 Semibold 字重 (见此表)，故使用数值描述增加了灵活性，也更简短。</p>
     </div>
