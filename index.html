@@ -478,7 +478,7 @@
             <li>多个规则的分隔符','前</li>
             <li><code>!important</code> '!'后</li>
             <li>属性值中'('后和')'前</li>
-            <li>行末不要有多余的空格</li>
+            <li>行尾不要有多余的空格</li>
         </ul>
         <p><strong>[强制]</strong>以下几种情况需要空格：</p>
         <ul>
@@ -557,7 +557,7 @@
         <h3>空行</h3>
         <p><strong>[强制]</strong>以下几种情况需要空行：</p>
         <ul>
-            <li>文件最后保留一个空行</li>
+            <li>文件未尾保留一个空行</li>
             <li>'}'后最好跟一个空行，包括scss中嵌套的规则</li>
             <li>属性之间需要适当的空行，具体见<a href="#css-declaration-order">属性声明顺序</a></li>
         </ul>
@@ -1576,7 +1576,14 @@
             <li>变量声明后（当变量声明在代码块的最后一行时，则无需空行）</li>
             <li>注释前（当注释在代码块的第一行时，则无需空行）</li>
             <li>代码块后（在函数调用、数组、对象中则无需空行）</li>
-            <li>文件最后保留一个空行。<a href="http://www.zhihu.com/question/20018991">为什么这么做？</a></li>
+            <li>文件最后保留一个空行。</li>
+            <li style="list-style:none;color:#4f9fcf;">
+              <strong style="color:#0a8;">解释：</strong>
+              没有空行在合并多个文件时可能会把上一个文件的最后一行与下一个文件的第一行合并为一行，特别是，JS 中如果没有这个空行而恰巧末尾没有写分号，整个文件可能就会报错了。
+            </li>
+            <li style="list-style:none;">
+              扩展阅读：<a href="http://www.zhihu.com/question/20018991">为什么这么做？</a>
+            </li>
         </ul>
     </div>
     <div class="col">
